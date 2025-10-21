@@ -26,7 +26,7 @@ jobs:
         run: mvn clean install
 
       - name: Build Docker image
-        run: docker build -t facubus-backend ./backend
+        run: docker build -t facubus-backend .
 
       - name: Run tests
         run: mvn test

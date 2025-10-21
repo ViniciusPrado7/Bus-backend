@@ -14,6 +14,6 @@ WORKDIR /app
 
 COPY --from=build /app/target/facuBackBus-1.0-SNAPSHOT.jar ./facuBackBus.jar
 
-EXPOSE 8082
+EXPOSE 8080
 
 CMD ["java", "-jar", "facuBackBus.jar"]
